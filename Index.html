@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>RTFC</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="./Images/logo_120x120.png">
+<link rel="stylesheet" href="./Style/w3.css">
+<link rel="stylesheet" href="./Style/css">
+<link rel="stylesheet" href="./Style/menu.css">
+<script type="text/javascript" src="./Style/site.js"></script>
+<script type="text/javascript" src="./Style/jquery-3.7.1.min.js"></script>
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("./Images/template.jpeg");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style>
+</head>
+<body style="background-color: black;">
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-black" style="position: fixed;">
+  <div id="top-header" class="w3-right w3-hide-small" style="float:none !important;">
+    <div id="top-social-menu" style="text-align: right;margin-right: 15px;">
+      <ul class="top-social-icons" style="">
+        <li class="top-social-facebook" style="display:inline-block">
+          <a href="https://www.facebook.com/">
+            <img src="./Images/facebook.png" alt="RTFC Football" style="height:20px;width:20px;">
+          </a>
+        </li>
+        <li class="top-social-instagram" style="display:inline-block;margin-left:3px;">
+          <a href="https://www.instagram.com/" class="icon">
+            <img src="./Images/instagram.png" alt="RTFC Football" style="height:20px;width:20px;">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="w3-bar small-nav" id="NavbarId" style="height: 6em;transition: 0.4s;position: fixed;background-color: #000;">
+    <a href="https://rtfc.com.au/" class="w3-bar-item w3-button w3-wide" style="padding:0;"> 
+      <img src="./Images/logo_120x120.png" alt="RTFC Football" style="width:60%;transition: 0.4s;" id="NavLogoId">
+    </a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small" style="font-weight: bold;transition: 0.4s;position:fixed;margin-left: 15em;" id="NavMenuId">
+      <ul class="NavLinkClass" style="float: right;padding-top: 1.6em;margin-top: 0;">
+        <i><a href="https://rtfc.com.au/" class="w3-bar-item w3-button" style="color: #7cda24;padding-top:0;">Home</a></i> 
+        <i><a href="https://rtfc.com.au/" class="w3-bar-item w3-button" style="padding-top:0;"><i class=""></i> Program page description</a></i> 
+        <i><a href="https://rtfc.com.au/" class="w3-bar-item w3-button" style="padding-top:0;"><i class=""></i> News page description</a></i> 
+        <i><a href="https://rtfc.com.au/" class="w3-bar-item w3-button" style="padding-top:0;"><i class=""></i> Test page description</a></i> 
+        <i><a href="https://rtfc.com.au/" class="w3-bar-item w3-button" style="padding-top:0;"><i class=""></i> Test page description</a></i> 
+        <i><a href="https://rtfc.com.au/" class="w3-bar-item w3-button" style="padding-top:0;"><i class=""></i> Test page description</a></i>
+      </ul>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium small-nav" id="menuContainerId" style="background-color:black;z-index:1;">
+      <div class="container menuContainer" id="sideMenuId" onclick="menu_open(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+    </a>   
+  </div>
+  <div class="dropdown w3-hide-large w3-hide-medium" id="menuPopup" style="height:10em;width:80%;position:fixed;margin-top:3em;border-top:2px solid #427cbf;margin-left: 3em;">
+    <div id="myDropdown" class="dropdown-content" style="with:100%;">
+      <a href="https://rtfc.com.au/">Home</a>
+      <a href="https://rtfc.com.au/">News page description</a>
+      <a href="https://rtfc.com.au/">Test page description</a>
+      <a href="https://rtfc.com.au/">Test page description1</a>
+      <a href="https://rtfc.com.au/">Test page description2</a>
+      <a href="https://rtfc.com.au/">Test page description3</a>
+    </div>
+  </div>
+</div>
+
+<div class="w3-container small-header-img" style="padding-right: 0px;margin-top: 12em;">
+  <div class="w3-row-padding" style="padding-right: 0px;" >
+    <div class="">
+      <img class="w3-image small-top-image" src="./Images/template.jpeg" alt="template" style="float:right;">
+    </div>
+    <div class="full-h1 small-h1" style="position: absolute;">
+      <h1 style="color:white;line-height:0.75em;font-weight:900;font-size:12vw;font-family:'Montserrat',Helvetica,Arial,Lucida,sans-serif;font-style:italic;">
+        RTFC<br>FOOTBALL
+      </h1>
+    </div>
+  </div>
+</div>
+
+<div class="w3-container" style="padding-right: 0px;">
+  <div class="w3-row-padding" style="padding-right: 0px;" >
+    <div class="small-header" style="text-align: center;margin-top:2em;">
+      <h1 style="color: white;line-height: 1em;font-weight: 500;font-size: 11vw;font-family:'Montserrat',Helvetica,Arial,Lucida,sans-serif;">
+        RTFC<br>FOOTBALL<br>DESCRIPTION
+      </h1>
+    </div>
+  </div>
+</div>
+
+<div class="w3-container" style="padding-right: 0px;">
+  <div class="w3-row-padding" style="padding-right: 0px;" >
+    <div class="text-2 text-1" style="text-align:left;margin-top: 20px;">
+      <h1 style="color: white;line-height: 1em;font-size:20px;">
+        RTFC test description test description test description test description<br><br>Football description test description test description 1
+      </h1>
+    </div>
+    <div class="text-2 text-1" style="text-align:left;margin-top: 20px;">
+      <h1 style="color: white;line-height: 1em;">
+        RTFC test description test description Football description 2
+      </h1>
+    </div>
+  </div>
+</div>
+
+<!-- About Section -->
+<div class="w3-container" id="about">
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter small-quarter" style="padding-left: 3em;">
+      <img src="./Images/template.jpeg" alt="John" style="width:100%;border-radius: 8px;">
+      <p class="w3-large" style="color: white;">Title template</p>
+      <p style="color: white;">Contents template contents template  contents template contents template</p>
+    </div>
+    <div class="w3-quarter small-quarter" style="padding-left: 3em;">
+      <img src="./Images/template.jpeg" alt="John" style="width:100%;border-radius: 8px;">
+      <p class="w3-large" style="color: white;">Title template</p>
+      <p style="color: white;">Contents template contents template  contents template contents template</p>
+    </div>
+    <div class="w3-quarter small-quarter" style="padding-left: 3em;">
+      <img src="./Images/template.jpeg" alt="John" style="width:100%;border-radius: 8px;">
+      <p class="w3-large" style="color: white;">Title template</p>
+      <p style="color: white;">Contents template contents template  contents template contents template</p>
+    </div>
+    <div class="w3-quarter small-quarter" style="padding-left: 3em;">
+      <img src="./Images/template.jpeg" alt="John" style="width:100%;border-radius: 8px;">
+      <p class="w3-large" style="color: white;">Title template</p>
+      <p style="color: white;">Contents template contents template  contents template contents template</p>
+    </div>
+  </div>
+</div>
+
+<!-- Contact Section -->
+<div class="w3-container small-contact-us" style="margin-top: 3em;padding: 0 10em;" id="contact">
+  <h3 style="color:white;">Contact Us</h3>
+  <div style="margin-top:2em">
+    <form action="https://rtfc.com.au/" target="_blank">
+      <label name="Name" style="color: white;">Name <span style="color:red;">*</span>
+        <p style="margin-top: 0;"><input class="w3-input w3-border" type="text" required="" name="Name"></p>
+      </label>
+      <label name="Name" style="color: white;">Email <span style="color:red;">*</span>
+        <p style="margin-top: 0;"><input class="w3-input w3-border" type="text" required="" name="Email"></p>
+      </label>
+      <label name="Name" style="color: white;">Contact Number <span style="color:red;">*</span>
+        <p style="margin-top: 0;"><input class="w3-input w3-border" type="text" required="" name="ContactNumber"></p> 
+      </label>
+      <label name="Name" style="color: white;">Date of Birth <span style="color:red;">*</span>
+        <p style="margin-top: 0;"><input class="w3-input w3-border" type="text" required="" name="DateOfBirth"></p>
+      </label>
+      <label name="Name" style="color: white;">Playing position <span style="color:red;">*</span>
+        <p style="margin-top: 0;"><input class="w3-input w3-border" type="text" required="" name="PlayingPosition"></p>
+      </label>
+      <label name="Name" style="color: white;">Local Club <span style="color:red;">*</span>
+        <p style="margin-top: 0;"><input class="w3-input w3-border" type="text" required="" name="LocalClub"></p>
+      </label>
+      <label name="Name" style="color: white;">Message
+        <p style="margin-top: 0;"><textarea class="w3-input w3-border" name="Message" style="height: 8em;"></textarea></p> 
+      </label>
+      <p>
+        <button class="w3-button w3-white" type="submit" style="color:black;">Submit</button>
+      </p>
+    </form>
+  </div>
+</div>
+
+<!-- SocialMedia Section -->
+<div class="w3-container small-contact-us" style="padding: 0 10em;" id="SocialMedia">
+  <div style="margin-top: 5em;">
+    <div style="display:inline-block;margin-left: 1em;">
+      <img src="./Images/logo_120x120.png" style="width:5em" onclick="onImgClick(this)" class="w3-hover-opacity" alt="A microphone">
+    </div>
+    <div style="display:inline-block;vertical-align: bottom;">
+      <p style="margin-bottom: 0;margin-left: 1em;color:white;">RTFC Football</p>
+      <p style="margin-top: 0;margin-left: 2em;color:white;">Social media lists</p>
+    </div>    
+  </div>
+  <div class="w3-row-padding" style="margin-top:20px">
+    <div class="w3-col l3 m6 small-bottom-img" style="cursor: pointer;">
+      <img src="./Images/template.jpeg" style="width:100%;margin-bottom: 1em;" onclick="onImgClick(this)" class="w3-hover-opacity" alt="A microphone">
+    </div>
+    <div class="w3-col l3 m6 small-bottom-img" style="cursor: pointer;">
+      <img src="./Images/template.jpeg" style="width:100%;margin-bottom: 1em;" onclick="onImgClick(this)" class="w3-hover-opacity" alt="A phone">
+    </div>
+    <div class="w3-col l3 m6 small-bottom-img" style="cursor: pointer;">
+      <img src="./Images/template.jpeg" style="width:100%;margin-bottom: 1em;" onclick="onImgClick(this)" class="w3-hover-opacity" alt="A drone">
+    </div>
+    <div class="w3-col l3 m6 small-bottom-img" style="cursor: pointer;">
+      <img src="./Images/template.jpeg" style="width:100%;margin-bottom: 1em;" onclick="onImgClick(this)" class="w3-hover-opacity" alt="Soundbox">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col l3 m6 small-bottom-img" style="cursor: pointer;">
+      <img src="./Images/template.jpeg" style="width:100%;margin-bottom: 1em;" onclick="onImgClick(this)" class="w3-hover-opacity" alt="A tablet">
+    </div>
+    <div class="w3-col l3 m6 small-bottom-img" style="cursor: pointer;">
+      <img src="./Images/template.jpeg" style="width:100%;margin-bottom: 1em;" onclick="onImgClick(this)" class="w3-hover-opacity" alt="A camera">
+    </div>
+    <div class="w3-col l3 m6 small-bottom-img" style="cursor: pointer;">
+      <img src="./Images/template.jpeg" style="width:100%;margin-bottom: 1em;" onclick="onImgClick(this)" class="w3-hover-opacity" alt="A typewriter">
+    </div>
+    <div class="w3-col l3 m6 small-bottom-img" style="cursor: pointer;">
+      <img src="./Images/template.jpeg" style="width:100%;margin-bottom: 1em;" onclick="onImgClick(this)" class="w3-hover-opacity" alt="A tableturner">
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center">
+  <div style="display:inline-block;color: white;"><p>Powered by <a href="https://rtfc.com.au/" title="rtfc" target="_blank" class="w3-hover-text-green">RTFC</a></p></div>  
+  <div class="w3-xlarge w3-section" style="display:inline-block;">
+      <li class="top-social-facebook" style="display:inline-block">
+        <a href="https://www.facebook.com/">
+          <img src="./Images/facebook.png" alt="RTFC Football" style="height:20px;width:20px;">
+        </a>
+      </li>
+      <li class="top-social-instagram" style="display:inline-block;margin-left:3px;">
+        <a href="https://www.instagram.com/" class="icon">
+          <img src="./Images/instagram.png" alt="RTFC Football" style="height:20px;width:20px;">
+        </a>
+      </li>
+  </div>  
+</footer>
+ 
+</body></html>
